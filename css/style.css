@@ -1,0 +1,128 @@
+body {
+	min-width: 320px;
+	line-height: normal;
+	margin: 0;
+	background-color: #181818;
+	background-image: url(../images/bg-pattern.jpg);
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+::selection {
+	background-color: #ffb7b7;
+}
+
+.big-size {
+	font-size: 1.3em;
+}
+.small-size {
+	font-size: 0.7em;
+}
+.thin {
+	font-weight: 300;
+}
+.thik {
+	font-weight: 700;
+	letter-spacing: -0.03em;
+}
+.align-center {
+	text-align: center;
+}
+
+
+
+.grid {
+    font-size: 0;
+    overflow: hidden;
+}
+.grid__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+.grid__item-inner {
+    padding: 1%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.grid__item-link {
+    display: block;
+    opacity: 0.8;
+}
+.grid__item-link:hover,
+.grid__item-link:focus {
+    opacity: 1;
+}
+.grid__item-image {
+    display: block;
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.grid__item-textlink {
+	position: relative;
+}
+.grid__item-textlink:after {
+	position: absolute;
+	bottom: 10%;
+	left: 0; right: 0;
+	content: "";
+	display: block;
+	border-bottom: 1px dashed #fff;
+}
+.grid__item-textlink:hover:after {
+	border-bottom-style: solid;
+}
+
+
+@media screen and (min-width: 981px) {
+	.grid__item {
+		width: 25%;
+	}
+	.grid__item-inner {
+		font-size: 28px;
+	}
+    .grid__item-link {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .grid__item-link:hover,
+    .grid__item-link:focus {
+        position: relative;
+        z-index: 1;
+        -webkit-transform: scale(1.01);
+        -moz-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 980px) {
+	.grid__item {
+		width: 33.33333%;
+	}
+	.grid__item-inner {
+		font-size: 26px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.grid__item {
+		width: 50%;
+	}
+}
+@media screen and (min-width: 421px) and (max-width: 600px) {
+	.grid__item-inner {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.grid__item-inner {
+		font-size: 20px;
+	}
+}
