@@ -1,5 +1,4 @@
-User-agent: *
-Allow: /
-Allow: /sitemap.htm
-Sitemap: http://ykshta.ml/sitemap.xml
+User-agent: *
+Allow: /
+Sitemap: https://ykshta.ml/sitemap.xml
 Host: ykshta.ml
